@@ -1,5 +1,5 @@
 // This file shows basic functions of reading in a CSV file using C++98
-// Please add your name to your code! 
+//Aseeb Ahmad
 
 /* Homework Objective: fix this program to match the requirements listed: 
   1. successfully reads all lines of the input file
@@ -28,11 +28,11 @@ int main() {
   vector<string>vCategory;
   vector<int>vYear;
   vector<float>vPrice;
-  vector<int> sku2020, sku2000, sku2010;
-  float avgpriceofABC=0;
-  float avgpriceofXYZ=0;
-  int countABC=0;
-  int countXYZ=0;
+  vector<int> sku2020, sku2000, sku2010; // vectors to hold the SKUS
+  float avgpriceofABC=0; // place holder for avg price 
+  float avgpriceofXYZ=0; // place holder for avg price
+  int countABC=0; // count for abc
+  int countXYZ=0; // count for XYZ
   int countA, countB,countC =0;
   float avgpriceofA, avgpriceofB, avgpriceofC= 0.0;
 
@@ -88,17 +88,20 @@ int main() {
   for (int j = 1; j < vSKU.size(); j++) {
     output << vSKU[j] << "   " << vBrand[j] << " \t \t" << vCategory[j] << " \t \t " << vYear[j] << " \t " << vPrice[j] << endl;
   }
+  // loop for getting price of XYZ and also increments counter
   for(int i=0; i < vBrand.size(); i++) { 
     if(vBrand[i] == "XYZ") {
       avgpriceofXYZ += vPrice[i];
       countXYZ++;
 
     }
+    // if statement for finding xyz and finding the avg price
     if (vBrand[i] == "ABC") {
       avgpriceofABC += vPrice[i];
       countABC++;
 
     }
+    // if statement to find abc and finding the avg price of it 
   }
     for(int j=0; j < vCategory.size(); j++) {
       if (vCategory[j] == "A") {
@@ -106,14 +109,17 @@ int main() {
         countA++;
 
       }
+      // if it sees A we add the price that matches with it and increment counter
       if (vCategory[j] == "B") {
         avgpriceofB += vPrice[j];
         countB++;
       }
+      // if it sees a B add price and increment
       if(vCategory[j] == "C") {
         avgpriceofC += vPrice[j];
         countC++;
       }
+      // if it sees a C add price and increment 
 
     }
     //output << "2020 " <<sku2020.size() << " ";
@@ -122,11 +128,13 @@ int main() {
         sku2020.push_back(vSKU[i]);
         
       }
+      // we see the year 2020 we push the sku into the vecotr
     }
      output << "2020 " << "(" << sku2020.size() << ")" << " ";
     for(int i=0; i<sku2020.size(); i++) {
       output << sku2020[i] << ", ";
     }
+    // prints out 2020 with the size of the vector and SKUS
     output << endl;
 
     for(int i=0; i<vSKU.size(); i++) {
@@ -134,22 +142,26 @@ int main() {
         sku2010.push_back(vSKU[i]);
         
       }
+      // if it sees 2010 we add the SKU into the vector
     }
      output << "2010 " << "(" << sku2010.size() << ")" << " ";
     for(int i=0; i<sku2010.size(); i++) {
       output << sku2010[i] << ", ";
     }
+    // outputs into the file the year, values of sku and sizr of vector
     output << endl;
      for(int i=0; i<vSKU.size(); i++) {
       if(vYear[i] == 2000) {
         sku2000.push_back(vSKU[i]);
         
       }
+      // if it sees 2000 we add to the vector
     }
      output << "2000 " << "(" << sku2000.size() << ")" << " ";
     for(int i=0; i<sku2000.size(); i++) {
       output << sku2000[i] << ", ";
     }
+    //outputs to file the year, values and vector size
     output << endl;
 
   
