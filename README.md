@@ -29,3 +29,13 @@ Test case 5 square root of 25 = 5
 
 
 <img width="533" alt="Screen Shot 2022-03-23 at 4 36 57 PM" src="https://user-images.githubusercontent.com/61560252/159791822-60dd6aea-c71f-40bb-94cf-937f04974f83.png">
+
+
+Problem description:
+  lab 2 was using struct and enum in order to make a simple calculator that can handle 5 simple operations, addition, subtraction, multiplication and division. Along with automating it through the use of Makefiles, the task of making the calculator was based on having the operations and being able to make sure the right input is put for each operation that it wants.
+  
+ Problem solving: looking at a simple calculator that you can get from the store, i realized that enum would be used to store the operations and the structure would hold the methods and calculations for each operation we have presented. And in our main we have if statements to check what operation it is according to each operation input is taken in accordiningly and a answer is given as well. 
+ 
+ 
+  
+  
