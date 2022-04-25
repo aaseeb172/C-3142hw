@@ -176,7 +176,7 @@ int main() {
 
   output << "\n" << "Average price per category for B is " << avgpriceofB/countB << endl;
 
-  output << "\n" << "Average price per category for C is " << avgpriceofC/countC << endl; 
+  output << "\n" << "Average price per category for D is " << avgpriceofC/countC << endl; 
 
   output << endl;
 

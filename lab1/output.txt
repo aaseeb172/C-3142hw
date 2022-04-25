@@ -20,5 +20,5 @@ Average price per category for A is 1.6
 
 Average price per category for B is 1
 
-Average price per category for C is 1
+Average price per category for D is 1
 
