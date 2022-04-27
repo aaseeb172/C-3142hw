@@ -2,7 +2,8 @@
 Repository for submitting homework and labs
 
 Lab 3: to run do 
-
+cd lab3
+cd src
 make lab3
 
 i have most of the code however due to a runtime error with my input i could not figure out why my vectors were empty but still most of the assignment has been completed just could not fix this error.
