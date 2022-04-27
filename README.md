@@ -1,6 +1,53 @@
 # C-3142hw
 Repository for submitting homework and labs
 
+Lab 3: to run do 
+
+make lab3
+
+i have most of the code however due to a runtime error with my input i could not figure out why my vectors were empty but still most of the assignment has been completed just could not fix this error.
+
+program description: use classes and structures to access records of classes and be able to provide average pass rates based on terms, instructors, and by class as well.
+
+problem solving: i was able to do the logical element of the program however due to a runtime error which left my input blank and my vectors filled with no values i could not do the rest of the assignment due to not being able to figure out the reason behind it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Lab 2: test cases and work lab2
 
 Lab2 test cases:
